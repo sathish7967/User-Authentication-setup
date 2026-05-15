@@ -1,0 +1,15 @@
+<h2>Verify OTP</h2>
+
+<form method="POST">
+
+    {% csrf_token %}
+
+    <input type="email" name="email">
+
+    <input type="text" name="otp">
+
+    <button type="submit">
+        Verify OTP
+    </button>
+
+</form>
